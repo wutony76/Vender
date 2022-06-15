@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.CheckFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+
+        android:background="@drawable/goods01"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:id="@+id/food_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="18dp"
+            android:paddingTop="23dp">
+
+            <ImageView
+                android:id="@+id/p_img"
+                android:layout_width="115dp"
+                android:layout_height="115dp"
+                android:background="@color/white"
+
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/product_image"
+
+
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:id="@+id/food"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="種類：雞排"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/total"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="總數量：９９９"
+                    android:textColor="@color/white"
+
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/remain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="未兌換：９９９"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/convert"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="已兌換：０"
+                    android:textColor="@color/colorGoldword"
+
+                    android:textSize="21sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

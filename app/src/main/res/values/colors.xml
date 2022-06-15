@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#ffd1e1</color>
+
+    <!-- loading bg color  -->
+    <color name="colorBaseBg">#e5e3e8</color>
+    <color name="colorCustomer">#4dc7bc</color>
+    <color name="colorLoginWord">#075054</color>
+    <color name="colorAppTitle">#127070</color>
+    <color name="colorMenu">#dcefed</color>
+
+
+    <!-- word color  -->
+    <color name="colorGoldword">#fff235</color>
+
+
+    <!-- alpha mask color  -->
+    <color name="colorToastMask">#64292929</color>
+
+
+
+
+    <!-- chick  -->
+    <color name="colorChickTitle">#de3a0d</color>
+    <color name="colorChickBg">#ed0d83</color>
+    <color name="colorChickBg2">#6e093e</color>
+    <color name="colorChickWord">#ffd22e</color>
+
+    <color name="red">#ff0000</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#080a1d</color>
+
+
+
+    <color name= "colorFragment">#dee0f2</color>
+    <color name= "colorWelcome">#fffcba</color>
+
+    <color name= "coardBg">#c7c7c7</color>
+
+
+
+</resources>

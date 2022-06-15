@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity"
+    >
+
+
+    <!-- 頁面主要內容，用一個Layout包著  -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorAppTitle"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:elevation="4dp"
+            android:gravity="center">
+
+<!--
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+            </RelativeLayout>
+        -->
+            <ImageView
+                android:id="@+id/AppTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:scaleType="fitStart"
+                android:src="@drawable/word00"
+                />
+
+        </android.support.v7.widget.Toolbar>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/mainLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="55dp">
+
+
+            <!-- app Title
+            <com.wz.tony.chick_vendor.Ui.TitleLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </com.wz.tony.chick_vendor.Ui.TitleLayout>
+            -->
+
+            <!-- 商家資料 -->
+            <TextView
+                android:id="@+id/vendorName"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+
+                android:gravity="center"
+                android:text="王族大雞排( 羅東店 )"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+
+            <!-- 兌換商品 資訊 -->
+            <!-- 自訂義 scroll view -->
+            <com.wz.tony.chick_vendor.Ui.RefreshScroll.PullToRefreshLayout
+                android:id="@+id/foodScroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:background="@color/colorBaseBg"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+
+                tools:context="com.wz.tony.chick_vendor.TestActivity">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/foodInfoList"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                    </LinearLayout>
+                </ScrollView>
+            </com.wz.tony.chick_vendor.Ui.RefreshScroll.PullToRefreshLayout>
+
+
+
+
+
+            <!-- 兌換商品 資訊
+            <ScrollView
+
+                android:id="@+id/foodScroll"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+
+                android:background="@color/colorBaseBg"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp">
+
+                <LinearLayout
+                    android:id="@+id/foodInfoList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"></LinearLayout>
+
+            </ScrollView>
+            -->
+
+
+
+            <FrameLayout
+                android:id="@+id/mainFrameLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="300dp"
+
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="20dp"
+
+                android:layout_weight="1"
+                android:visibility="gone">
+
+            </FrameLayout>
+
+
+            <TextView
+                android:id="@+id/barcode"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/QR_start"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/convertFood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="20dp"
+                android:textColor="@color/colorWelcome"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/_startBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="掃描" />
+
+                <Button
+                    android:id="@+id/okBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="確認" />
+
+                <Button
+                    android:id="@+id/refrash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Refrash"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/startBtn"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+
+                android:padding="5dp"
+                android:src="@drawable/button_qr" />
+
+
+            <ImageView
+                android:id="@+id/customerBtn"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/colorCustomer"
+
+                android:minHeight="65dp"
+                android:padding="5dp"
+
+                android:src="@drawable/service" />
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+    <!--側邊選單-->
+    <!--headerLayout：於側邊選單中的上方加入圖片、文字...-->
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:menu="@menu/app_settings"
+        app:headerLayout="@layout/menu_header"
+
+        android:background="@color/colorMenu"/>
+
+</android.support.v4.widget.DrawerLayout>

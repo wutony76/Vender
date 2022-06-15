@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">商家交易(QR掃碼)</string>
+    <string name="title_activity_load">LoadActivity</string>
+    <string name="drawer_open">drawer_open</string>
+    <string name="drawer_close">drawer_close</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+
+
+
+
+
+
+    <!-- ui TextView Data  -->
+    <string name= "food_name">種類：%s</string>
+    <string name= "food_total">總數量：%s</string>
+    <string name= "food_remain">未兌換：%s</string>
+    <string name= "food_convert">已兌換：%s</string>
+
+    <string name= "main_barcode">序號：%s</string>
+    <string name= "main_convert">%s 一份 (確認要兌換，請點確認)</string>
+
+    <string name= "convert_success">兌換成功</string>
+    <string name= "convert_error">沒有序號，請重新掃碼</string>
+
+
+
+    <!-- QR sensor -->
+    <string name= "QR_start">請開始掃描</string>
+    <string name= "QR_context">掃描內容：%s</string>
+    <string name= "QR_error">發生錯誤</string>
+    <string name= "QR_errorData">錯誤的格式資料</string>
+    <string name= "QR_again">請重新掃描</string>
+
+
+
+
+    <!-- login post -->
+    <string name= "login_errors">請輸入帳號密碼!!</string>
+    <string name= "post_200_success">登入成功!!</string>
+    <string name= "post_200_errors">資料錯誤，請重新登入!!</string>
+    <string name= "post_other_errors">連線錯誤，請稍後再重新登入!!</string>
+
+    <string name= "voder_update">資料更新</string>
+
+
+    <string name= "http_conn_login">登入中...</string>
+    <string name= "http_conn_data">載入中...</string>
+    <string name= "http_errors">連線逾時，請確認網路環境!!</string>
+
+
+
+</resources>

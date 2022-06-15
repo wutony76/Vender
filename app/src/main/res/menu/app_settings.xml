@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/m_exchange"
+            android:checked="true"
+            android:title="兌換商品" />
+
+
+        <item
+            android:id="@+id/m_recoard"
+            android:title="兌換紀錄" />
+
+
+        <item
+            android:id="@+id/m_refresh"
+            android:title="刷新資料" />
+
+
+
+        <item
+            android:id="@+id/m_logout"
+            android:title="登出APP" />
+
+        <item
+            android:id="@+id/test4"
+            android:title="聯絡我們" />
+
+
+        <item
+            android:id="@+id/test2"
+            android:title="客服資訊" />
+
+
+    </group>
+
+</menu>
